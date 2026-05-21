@@ -1,0 +1,179 @@
+/* blog.css — only styles for the blog section */
+
+.blog-section {
+    background-color: #1e1e1e;
+    border: 2px solid #F8F8F2;
+    border-radius: 15px;
+    padding: 1.25em 1.5em;
+    max-width: 700px;
+    margin: 2em auto;
+    color: #F8F8F2;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid #44475a;
+    padding-bottom: 0.5em;
+}
+
+.blog-header h2 {
+    margin: 0;
+    color: #F8F8F2;
+}
+
+/* GitHub button */
+.gh-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #F8F8F2;
+    border: 1.5px solid #F8F8F2;
+    border-radius: 8px;
+    padding: 0.25em 0.75em;
+    font-size: 0.85em;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.gh-btn:hover {
+    background: #F8F8F2;
+    color: #1e1e1e;
+}
+
+/* Post cards */
+.post-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.4em 0;
+    border-bottom: 1px solid #44475a;
+    gap: 1em;
+}
+.post-card a {
+    color: #8BE9FD;
+    text-decoration: none;
+}
+.post-card a:hover {
+    color: #BD93F9;
+}
+.post-date {
+    color: #6272a4;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+.no-posts {
+    color: #6272a4;
+}
+
+/* All posts button */
+.all-posts-wrap {
+    text-align: right;
+    margin-top: 0.75em;
+}
+.all-posts-btn {
+    display: inline-block;
+    color: #BD93F9;
+    border: 1.5px solid #BD93F9;
+    border-radius: 6px;
+    padding: 0.25em 0.75em;
+    font-size: 0.85em;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+}
+.all-posts-btn:hover {
+    background: #BD93F9;
+    color: #1e1e1e;
+}
+
+/* Single post */
+.post-body h1 {
+    margin: 0.5em 0 0.1em;
+    color: #F8F8F2;
+}
+.post-body hr {
+    border: none;
+    border-top: 1px solid #44475a;
+    margin: 0.75em 0 1.25em;
+}
+.back-link {
+    color: #BD93F9;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+.back-link:hover { text-decoration: underline; }
+
+.post-content {
+    color: #F8F8F2;
+    line-height: 1.7;
+}
+.post-content a {
+    color: #8BE9FD;
+    text-decoration: underline;
+}
+.post-content blockquote {
+    border-left: 3px solid #BD93F9;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #6272a4;
+}
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    color: #F8F8F2;
+}
+
+/* Inline code */
+.post-content code {
+    background: #44475a;
+    color: #f1fa8c;
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+    font-size: 0.9em;
+}
+
+/* Code blocks */
+pre {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #44475a;
+    margin: 1.25em 0;
+    overflow-x: auto;
+}
+pre code {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* Copy button */
+.copy-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    background: #44475a;
+    color: #F8F8F2;
+    border: 1px solid #6272a4;
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    font-size: 0.75em;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s, background 0.15s;
+}
+pre:hover .copy-btn { opacity: 1; }
+.copy-btn.copied {
+    background: #50FA7B;
+    color: #282a36;
+    border-color: #50FA7B;
+    opacity: 1;
+}
+
+/* Message block */
+.blog-message {
+    color: #dfe2ec;
+    font-size: 0.85em;
+    padding: 0.5em 0 0.75em;
+    border-bottom: 1px solid #44475a;
+    margin-bottom: 0.25em;
+}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="blog-section post-body">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="/" class="back-link">~ Home</a>
+    <a href="/blog/" class="back-link">all posts ↑</a>
+  </div>
+  <h1>{{ .Title }}</h1>
+  <span class="post-date">{{ .Date.Format "02 Jan 2006" }}</span>
+  <hr>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

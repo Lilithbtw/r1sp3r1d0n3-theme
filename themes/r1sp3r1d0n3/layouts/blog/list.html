@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="blog-section">
+  <div class="blog-header">
+    <h2>all posts</h2>
+    <a href="/" style="color:#BD93F9;">~ Home</a>
+  </div>
+  {{ range .Pages }}
+  <div class="post-card">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="post-date">{{ .Date.Format "02 Jan 2006" }}</span>
+  </div>
+  {{ else }}
+  <p class="no-posts">no posts yet!</p>
+  {{ end }}
+</div>
+{{ end }}

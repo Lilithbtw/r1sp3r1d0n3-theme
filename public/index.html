@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change_me</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <style>
+    @font-face {
+      font-family: VCR-JP;
+      src: url('/fonts/font.ttf');
+    }
+    * { font-family: 'VCR-JP', monospace; }
+    body { background-color: #282a36; margin: 0; }
+  </style>
+</head>
+<body>
+  
+<div class="blog-section">
+  <div class="blog-header">
+    <h2>recent posts</h2>
+    
+    <a class="gh-btn" href="https://github.com/Lilithbtw" target="_blank" rel="noopener">
+      <svg height="14" viewBox="0 0 16 16" width="14" fill="currentColor" style="vertical-align:middle;margin-right:5px;">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      Lilithbtw
+    </a>
+    
+  </div>
+
+  
+  <div class="blog-message"><p>Welcome to my blog, I&rsquo;m Lilith but please call me Lili, i will use this blog as an outlet for stuff i want to talk about such as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="p">{[</span><span class="s2">&#34;Politics&#34;</span><span class="p">,</span><span class="s2">&#34;Feminism&#34;</span><span class="p">,</span> <span class="s2">&#34;Comunism&#34;</span><span class="p">,</span> <span class="s2">&#34;Music&#34;</span><span class="p">,</span> <span class="s2">&#34;Gaming&#34;</span><span class="p">]}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&#34;secunda.casa&#34;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+</span></span></code></pre></div><p>I don&rsquo;t plan on writing everything i do everyday but it&rsquo;s something i want to use as an outlet for my creativity and express my emotions in a way i enjoy.</p>
+</div>
+  
+
+  
+  
+  <div class="post-card">
+    <a href="/blog/hello-world/">Hello World</a>
+    <span class="post-date">21 May 2026</span>
+  </div>
+  
+
+  <div class="all-posts-wrap">
+    <a class="all-posts-btn" href="/blog/">all posts →</a>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+        const pre = block.parentElement;
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = 'copy';
+        pre.appendChild(btn);
+        btn.addEventListener('click', () => {
+          navigator.clipboard.writeText(block.innerText).then(() => {
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = 'copy'; btn.classList.remove('copied'); }, 2000);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

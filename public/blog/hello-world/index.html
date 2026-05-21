@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World | Change_me</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <style>
+    @font-face {
+      font-family: VCR-JP;
+      src: url('/fonts/font.ttf');
+    }
+    * { font-family: 'VCR-JP', monospace; }
+    body { background-color: #282a36; margin: 0; }
+  </style>
+</head>
+<body>
+  
+<div class="blog-section post-body">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="/" class="back-link">~ Home</a>
+    <a href="/blog/" class="back-link">all posts ↑</a>
+  </div>
+  <h1>Hello World</h1>
+  <span class="post-date">21 May 2026</span>
+  <hr>
+  <div class="post-content">
+    <h1 id="this-is-a-test">This is a test</h1>
+<p>Hello World</p>
+<h2 id="this-is-also-a-test">This is also a test</h2>
+<h3 id="this-is-a-test-3">This is a test 3</h3>
+<h4 id="this-is-a-test-4">This is a test 4</h4>
+<h5 id="this-is-a-test-5">This is a test 5</h5>
+<p><a href="https://example.com">Texto del enlace</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">read_dice</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">accept_dice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Roll the dice? (y/n): &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">accept_dice</span> <span class="o">==</span> <span class="s2">&#34;y&#34;</span> <span class="ow">or</span> <span class="n">accept_dice</span> <span class="o">==</span> <span class="s2">&#34;Y&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num_dice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;How many rolls: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">times</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;How many times: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dice_sides</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;How many sides: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">times</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_dice</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">roll</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">dice_sides</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Roll </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: (</span><span class="si">{</span><span class="n">roll</span><span class="si">}</span><span class="s2">)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="n">accept_dice</span> <span class="o">==</span> <span class="s2">&#34;n&#34;</span> <span class="ow">or</span> <span class="n">accept_dice</span> <span class="o">==</span> <span class="s2">&#34;N&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">roll</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Thanks for playing!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Invalid choice!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">read_dice</span><span class="p">()</span>
+</span></span></code></pre></div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+        const pre = block.parentElement;
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = 'copy';
+        pre.appendChild(btn);
+        btn.addEventListener('click', () => {
+          navigator.clipboard.writeText(block.innerText).then(() => {
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = 'copy'; btn.classList.remove('copied'); }, 2000);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs | Change_me</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <style>
+    @font-face {
+      font-family: VCR-JP;
+      src: url('/fonts/font.ttf');
+    }
+    * { font-family: 'VCR-JP', monospace; }
+    body { background-color: #282a36; margin: 0; }
+  </style>
+</head>
+<body>
+  
+<div class="blog-section">
+  <div class="blog-header">
+    <h2>all posts</h2>
+    <a href="/" style="color:#BD93F9;">~ Home</a>
+  </div>
+  
+  <div class="post-card">
+    <a href="/blog/hello-world/">Hello World</a>
+    <span class="post-date">21 May 2026</span>
+  </div>
+  
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+        const pre = block.parentElement;
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = 'copy';
+        pre.appendChild(btn);
+        btn.addEventListener('click', () => {
+          navigator.clipboard.writeText(block.innerText).then(() => {
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = 'copy'; btn.classList.remove('copied'); }, 2000);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

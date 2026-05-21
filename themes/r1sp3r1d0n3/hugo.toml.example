@@ -1,0 +1,12 @@
+baseURL = "https://yourdomain.com"
+languageCode = "en"
+title = "Change_Me"
+theme = "r1sp3r1d0n3"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    noClasses = false
+
+[params]
+  github = "Lilithbtw"
