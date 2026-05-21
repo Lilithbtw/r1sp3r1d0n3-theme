@@ -10,10 +10,7 @@ git clone https://github.com/Lilithbtw/r1sp3r1d0n3-theme.git
 ```
 ```bash
 cd r1sp3r1d0n3-theme
-mkdir -p static/fonts
 ```
-
-Select the font you like the most for the website and copy it to the `static/fonts` folder you created earlier as `font.ttf`
 
 and finally run To display the markdowns of the `content` folder.
 ```bash
