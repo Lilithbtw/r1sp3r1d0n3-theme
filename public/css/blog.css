@@ -179,8 +179,9 @@ pre:hover .copy-btn { opacity: 1; }
 }
 
 
-/* Font Sizes */
-h1 { font-size: 2em; }
+/* Font Stuff */
+h1 { font-size: 2em; font-weight: 900;}
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.25em; }
 h4 { font-size: 1.1em; }
+p { color: #c8ccd8; }
