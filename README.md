@@ -1,4 +1,4 @@
-![image]()
+![image](https://raw.githubusercontent.com/Lilithbtw/r1sp3r1d0n3-theme/refs/heads/main/resources/image.png)
 
 # R1sp3r1d0n3 Theme
 Minimalist theme based on my own website with dracula-like color palette.
