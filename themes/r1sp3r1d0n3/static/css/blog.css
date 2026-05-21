@@ -177,3 +177,10 @@ pre:hover .copy-btn { opacity: 1; }
     border-bottom: 1px solid #44475a;
     margin-bottom: 0.25em;
 }
+
+
+/* Font Sizes */
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.1em; }
