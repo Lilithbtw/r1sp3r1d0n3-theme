@@ -1,5 +1,4 @@
 /* blog.css — only styles for the blog section */
-
 .blog-section {
     background-color: #1e1e1e;
     border: 2px solid #F8F8F2;
@@ -144,7 +143,7 @@ pre {
 pre code, code span {
     background: transparent !important;
     padding: 0 !important;
-    font-size: 0.8vw !important;
+    font-size: 1.50vmin !important;
 }
 
 /* Copy button */
