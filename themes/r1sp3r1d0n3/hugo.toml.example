@@ -7,6 +7,10 @@ theme = "r1sp3r1d0n3"
   [markup.highlight]
     codeFences = true
     noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
 
 [params]
   github = "Lilithbtw"
