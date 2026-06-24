@@ -110,7 +110,8 @@
 .post-content img {
     width: 96%;
     height: auto;
-    align: center;
+    display: flex;
+    justify-content: center;
 }
 .post-content a {
     color: #8BE9FD;
