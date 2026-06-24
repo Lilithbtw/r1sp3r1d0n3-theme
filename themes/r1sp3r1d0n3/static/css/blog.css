@@ -107,6 +107,10 @@
     color: #F8F8F2;
     line-height: 1.7;
 }
+.post-content img {
+    width: 96%;
+    height: auto;
+}
 .post-content a {
     color: #8BE9FD;
     text-decoration: underline;
